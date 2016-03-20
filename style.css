@@ -427,13 +427,22 @@ ul.courses li:hover {
     height: 5px;
 }
 
+.level.rudimentary .bar::after {
+    background: #8C0707;
+    width: 1em;
+}
+.level.basic .bar::after,
 .level.beginner .bar::after {
     background: #EB5F51;
     width: 2.5em;
 }
 
-.level.intermediate .bar::after {
+.level.prior .bar::after {
     background: #ffdf1f;
+    width: 3.5em;
+}
+.level.intermediate .bar::after {
+    background: #DEC21D;
     width: 5em;
 }
 

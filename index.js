@@ -6,7 +6,7 @@
     function render(resume) {
     	var css = fs.readFileSync(__dirname + "/style.css", "utf-8");
     	var tpl = fs.readFileSync(__dirname + "/resume.hbs", "utf-8");
-    	
+
     	return Handlebars.compile(tpl)({
     		css: css,
     		resume: resume
@@ -42,16 +42,16 @@
 
     Handlebars.registerHelper('MY', function(date) {
     	var d = date.toString();
-    	return moment(d, 'YYYY-mm-dd').format('MMMM YYYY');
+      return moment(d, 'YYYY-MM-DD').format('MMMM YYYY');
     });
 
     Handlebars.registerHelper('Y', function(date) {
-    	var d = date.toString();
-        return moment(d, 'YYYY-mm-dd').format('YYYY');
+      var d = date.toString();
+      return moment(d, 'YYYY-MM-DD').format('YYYY');
     });
 
     Handlebars.registerHelper('DMY', function(date) {
     	var d = date.toString();
-        return moment(d, 'YYYY-mm-dd').format('D MMMM YYYY');
+      return moment(d, 'YYYY-MM-DD').format('D MMMM YYYY');
     });
 }());

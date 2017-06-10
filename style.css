@@ -149,6 +149,10 @@ section .location {
     justify-content: flex-start;
 }
 
+#header {
+  margin-bottom: 15px;
+}
+
 #header > div {
     line-height: 1.5;
 }
